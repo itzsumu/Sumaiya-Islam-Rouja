@@ -7,12 +7,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Deep Black */
+    background-color: #000000; /* Deep Black */
     color: #E6E6FA; /* Lavender */
 }
 
 header {
-    background: #1F1F1F; /* Dark Greyish Black */
+    background: #060505; /* Dark Greyish Black */
     position: relative;
 }
 
@@ -170,10 +170,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.skill-front {
+    background-color: #8A2BE2; /* Lavender Purple */
+    color: #FFFFFF; /* White */
 }
 
 .skill-back {
-    background-color: #8A2BE2; /* Lavender Purple */
+    background-color: #2E2E2E; /* Slightly lighter dark background */
     color: #FFFFFF; /* White */
     transform: rotateY(180deg); /* Flip the back face */
 }
