@@ -136,6 +136,7 @@ footer {
     width: 100%;
 }
 
+/* Skills Section */
 .skills-list {
     list-style: none;
     display: flex;
@@ -143,19 +144,47 @@ footer {
     padding: 0; /* Remove default padding */
 }
 
-.skills-list li {
-    text-align: center; /* Center text under images */
+.skill-card {
+    perspective: 1000px; /* Create perspective for the 3D effect */
+    flex: 1;
+}
+
+.skill-inner {
+    position: relative;
+    width: 100px; /* Width of the skill card */
+    height: 100px; /* Height of the skill card */
+    transition: transform 0.6s; /* Animation for flipping */
+    transform-style: preserve-3d; /* Preserve the 3D effect */
+}
+
+.skill-card:hover .skill-inner {
+    transform: rotateY(180deg); /* Rotate on hover */
+}
+
+.skill-front,
+.skill-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face when flipped */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-back {
+    background-color: #8A2BE2; /* Lavender Purple */
+    color: #FFFFFF; /* White */
+    transform: rotateY(180deg); /* Flip the back face */
 }
 
 .skills-list img {
     width: 50px; /* Set the width for the icons */
     height: 50px; /* Set the height for the icons */
-    display: block; /* Ensure each image is on its own line */
-    margin: 0 auto 10px; /* Center the image and add margin below */
 }
 
 .skills-list span {
     display: block; /* Ensure the text is centered below the icon */
     font-weight: bold; /* Make the text bold */
-    color: #8A2BE2; /* Lavender Purple */
+    color: #E6E6FA; /* Lavender */
 }
