@@ -10,6 +10,52 @@ body {
     background-color: #000000; /* Deep Black */
     color: #E6E6FA; /* Lavender */
 }
+/* About Section */
+#about {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #E6E6FA;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #8A2BE2;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 3px solid #8A2BE2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(138, 43, 226, 0.6);
+}
+
+.about-container p {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
 
 header {
     background: #060505; /* Dark Greyish Black */
@@ -98,7 +144,7 @@ section h2 {
 }
 
 .project-card {
-    background: #2E2E2E; /* Slightly lighter dark background */
+    background: #030303; /* Slightly lighter dark background */
     color: #E6E6FA; /* Lavender */
     padding: 20px;
     margin: 10px;
@@ -127,7 +173,7 @@ section h2 {
 }
 
 footer {
-    background: #1F1F1F; /* Dark Greyish Black */
+    background: #000000; /* Dark Greyish Black */
     color: #E6E6FA; /* Lavender */
     text-align: center;
     padding: 15px 0;
@@ -179,7 +225,7 @@ footer {
 }
 
 .skill-back {
-    background-color: #2E2E2E; /* Slightly lighter dark background */
+    background-color: #000000; /* Slightly lighter dark background */
     color: #FFFFFF; /* White */
     transform: rotateY(180deg); /* Flip the back face */
 }
@@ -198,7 +244,7 @@ footer {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(-45deg, #8A2BE2, #4B0082, #000000, #1F1F1F);
+    background: linear-gradient(-45deg, #8A2BE2, #4B0082, #000000, #000000);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
 }
@@ -236,7 +282,7 @@ footer {
     margin: 10px;
     border-radius: 8px;
     flex: 1 1 calc(30% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
     transition: transform 0.3s, box-shadow 0.3s;
     perspective: 1000px;
     overflow: hidden;
@@ -245,7 +291,7 @@ footer {
 
 .project-card:hover {
     transform: translateY(-5px) rotateY(3deg);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
 }
 
 .more-info {
@@ -265,16 +311,16 @@ html {
 <div class="parallax">
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I’m Sumaiya Islam Rouja...</p>
+        <p>Hello! I’m Sumaiya Islam Rouja</p>
     </section>
 </div>
 /* Parallax Background */
 .parallax {
     background-image: url('img/background.jpg'); /* Replace with your image */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 /* Skills Section: Enhanced Flip and Pulse */
 .skill-card:hover .skill-inner {
@@ -332,7 +378,7 @@ header {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(-45deg, #8A2BE2, #4B0082, #000000, #1F1F1F);
+    background: linear-gradient(-45deg, #8A2BE2, #4B0082, #000000, #000000);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
 }
@@ -387,7 +433,7 @@ section {
     padding: 20px;
     background-color: #1F1F1F;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
 }
 
 section h2 {
@@ -404,7 +450,7 @@ section h2 {
     margin: 10px;
     border-radius: 8px;
     flex: 1 1 calc(30% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
     transition: transform 0.3s, box-shadow 0.3s;
     perspective: 1000px;
     overflow: hidden;
@@ -413,7 +459,7 @@ section h2 {
 
 .project-card:hover {
     transform: translateY(-5px) rotateY(3deg);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
 }
 
 .more-info {
@@ -507,7 +553,7 @@ header {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(-45deg, #8A2BE2, #4B0082, #000000, #1F1F1F);
+    background: linear-gradient(-45deg, #8A2BE2, #4B0082, #000000, #000000);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
 }
@@ -562,7 +608,7 @@ section {
     padding: 20px;
     background-color: #1F1F1F;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
 }
 
 section h2 {
@@ -574,6 +620,181 @@ section h2 {
 /* Project Card 3D Hover Effect */
 .project-card {
     background: #2E2E2E;
+    color: #E6E6FA;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) rotateY(3deg);
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+.more-info {
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding-top: 10px;
+    color: #8A2BE2;
+}
+
+.project-card:hover .more-info {
+    opacity: 1;
+}
+
+/* Parallax Background */
+.parallax {
+    background-image: url('img/background.jpg'); /* Replace with your image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Skills Section: Enhanced Flip and Pulse */
+.skill-card:hover .skill-inner {
+    transform: rotateY(180deg) rotateX(20deg);
+}
+
+.skill-front img {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Social Icons Styling */
+.social-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.social-icons a:hover img {
+    filter: grayscale(0%);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #E6E6FA;
+    font-size: 0.9em;
+}
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Deep Black */
+    color: #E6E6FA; /* Lavender */
+}
+
+header {
+    background: #000000; /* Deep Black */
+    position: relative;
+}
+
+/* Hero Section Animated Background */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(-45deg, #8A2BE2, #4B0082, #000000, #000000);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Typewriter Animation */
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    overflow: hidden;
+    border-right: .15em solid #8A2BE2;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #8A2BE2; }
+}
+
+.cta-button {
+    background: #8A2BE2;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #6A0DAD;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #000000; /* Deep Black */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    color: #8A2BE2;
+    border-bottom: 2px solid #E6E6FA;
+    padding-bottom: 10px;
+}
+
+/* Project Card 3D Hover Effect */
+.project-card {
+    background: #000000; /* Deep Black */
     color: #E6E6FA;
     padding: 20px;
     margin: 10px;
@@ -655,10 +876,112 @@ html {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1F1F1F;
+    background-color: #000000; /* Deep Black */
     color: #E6E6FA;
     font-size: 0.9em;
 }
+.hobbies-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.hobby-item {
+    text-align: center;
+    width: 20%;
+    perspective: 1000px; /* Add perspective for the 3D effect */
+}
+
+.hobby-inner {
+    width: 75%;
+    height: 250px; /* Set a fixed height for the card */
+    position: relative;
+    transform-style: preserve-3d; /* Preserve 3D space for flip */
+    transition: transform 0.6s ease-in-out; /* Add transition for flip */
+}
+
+.hobby-item:hover .hobby-inner {
+    transform: rotateY(180deg) rotateX(20deg); /* Flip and tilt the card on hover */
+}
+
+.hobby-front,
+.hobby-back {
+    backface-visibility: hidden; /* Hide the back side when flipped */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby-front {
+    background: #fff; /* White background for the front */
+}
+
+.hobby-back {
+    background: #333; /* Dark background for the back */
+    color: white;
+    transform: rotateY(180deg); /* Rotate the back side */
+}
+
+.hobby-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the container and maintains aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 1.5s infinite; /* Add pulse animation */
+}
+
+.hobby-back p {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+/* Add this to your CSS file */
+/* Butterfly Cursor Styling */
+.butterfly-cursor {
+    position: absolute;
+    pointer-events: none; /* Prevents cursor from interfering with other elements */
+    width: 50px;  /* Adjust the size of the butterfly */
+    height: 50px;
+    background-image: url('img/butterfly.png'); /* Make sure this path is correct */
+    background-size: contain; /* Ensures the image scales properly */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    transform: translate(-50%, -50%); /* Centers the butterfly image */
+    z-index: 9999; /* Ensures the cursor stays on top */
+    animation: flutter 1s ease-in-out infinite; /* Animation for flapping effect */
+}
+
+/* Keyframes for fluttering animation */
+@keyframes flutter {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+background-image: url('img/butterfly.png');
 section#contact {
     max-width: 600px;
     margin: auto;
@@ -690,7 +1013,7 @@ input, textarea {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #6A0DAD;
     color: white;
     border: none;
     border-radius: 4px;
@@ -698,5 +1021,6 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #6A0DAD;
 }
+
