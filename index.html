@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumaiya Islam Rouja's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,8 +31,16 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I’m Sumaiya Islam Rouja, a web programmer with a focus on software development and design. I’m passionate about creating impactful, user-friendly solutions that blend functionality and aesthetics. Outside of work, I love watching crime thrillers, traveling, cooking, and exploring photography. Feel free to connect with me—I’m always open to new opportunities!</p>
+            <div class="about-container">
+                <img src="img/my-photo.jpg" alt="Sumaiya Islam Rouja" class="about-photo">
+                <p>
+                    Hello! I’m Sumaiya Islam Rouja, a web programmer with a focus on software development and design. I’m passionate about creating impactful, user-friendly solutions that blend functionality and aesthetics. Outside of work, I love watching crime thrillers, traveling, cooking, and exploring photography. Feel free to connect with me—I’m always open to new opportunities!
+                </p>
+            </div>
         </section>
+        
+        </section>
+        
 
         <section id="projects">
             <h2>Projects</h2>
@@ -112,15 +119,43 @@
             </ul>
         </section>
 
-        <section id="hobbies">
+        <section id="hobbies"> 
             <h2>Hobbies</h2>
-            <ul>
-                <li>Cooking</li>
-                <li>Photography</li>
-                <li>Traveling</li>
+            <ul class="hobbies-list">
+                <li class="hobby-item">
+                    <div class="hobby-inner">
+                        <div class="hobby-front">
+                            <img src="img/img-cooking.jpg" alt="Cooking" class="hobby-image">
+                        </div>
+                        <div class="hobby-back">
+                            <p>Cooking</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="hobby-item">
+                    <div class="hobby-inner">
+                        <div class="hobby-front">
+                            <img src="img/img-photography.jpg" alt="Photography" class="hobby-image">
+                        </div>
+                        <div class="hobby-back">
+                            <p>Photography</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="hobby-item">
+                    <div class="hobby-inner">
+                        <div class="hobby-front">
+                            <img src="img/img-traveling.jpg" alt="Traveling" class="hobby-image">
+                        </div>
+                        <div class="hobby-back">
+                            <p>Traveling</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </section>
-
+        
+        
         <section id="certificates">
             <h2>Certificates</h2>
             <ul>
@@ -132,7 +167,10 @@
 
         <section id="resume">
             <h2>Resume</h2>
-            <p><a href="your-resume.pdf" target="_blank">Download My Resume</a></p>
+            <p><a href="resume.html" download="Jarin_Tasnim_Eara_Resume.pdf">
+                <button class="download-resume">Download Resume</button>
+            </a>
+            </p>
         </section>
         
         <section id="contact">
@@ -152,9 +190,8 @@
         
                 <!-- Send Button -->
                 <button type="submit">Send</button>
-                <form id="contactForm" action="/send" method="POST">
-
             </form>
+            
         </section>
         
     </main>
@@ -162,14 +199,33 @@
     <footer>
         <p>&copy; 2024 Sumaiya Islam Rouja. All rights reserved.</p>
     </footer>
-    <div class="project-card">
-        <h3>Project Title 1</h3>
-        <p>Brief description of the project. Explain what technologies were used and your role in it.</p>
-        <a href="#" class="project-link">View Project</a>
-        <div class="more-info">
-            <p>Additional details about the project, like challenges faced, results, or a brief tech stack.</p>
-        </div>
+ 
     </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        window.onload = function() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            const resumeContent = document.querySelector("body");
+    
+            // Function to download as PDF
+            function downloadPDF() {
+                doc.html(resumeContent, {
+                    callback: function (doc) {
+                        doc.save('Sumaiya_Islam_Rouja_Resume.pdf');
+                    },
+                    margin: [10, 10, 10, 10], // Margin for the PDF
+                    x: 10,
+                    y: 10
+                });
+            }
+    
+            // Add a click event to the download button
+            const downloadButton = document.getElementById('download-pdf');
+            downloadButton.addEventListener('click', downloadPDF);
+        }
+    </script>
     
 </body>
 </html>
