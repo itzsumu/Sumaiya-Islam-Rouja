@@ -592,7 +592,6 @@ button:hover {
 /* Download Button */
 .download-button {
     height: 45px;
-    weight: 20px;
     display: inline-block;
     padding: 10px 15px; /* Button padding */
     background-color: #6A1C9A; /* Lavender purple */
