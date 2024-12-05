@@ -561,3 +561,57 @@ button:hover {
     line-height: 1.5;
     color: #eaeaea;
 }
+/* Resume Section */
+#resume {
+    text-align:left;
+    padding: 40px;
+    background-color: #000000; /* Dark background */
+    color: #E6E6FA; /* Lavender text */
+}
+
+#resume h2 {
+    font-size: 2em;
+    color: #6A1B9A; /* Highlighted lavender */
+    margin-bottom: 20px;
+}
+
+#resume .resume-button {
+    display: inline-block;
+    background-color:#6A1B9A; /* Lavender purple */
+    color: #FFFFFF;
+    padding: 15px 30px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#resume .resume-button:hover {
+    background-color: #6A1C9A; /* Darker purple on hover */
+}
+/* Download Button */
+.download-button {
+    height: 45px;
+    weight: 20px;
+    display: inline-block;
+    padding: 10px 15px; /* Button padding */
+    background-color: #6A1C9A; /* Lavender purple */
+    color: #FFFFFF; /* White text */
+    font-size: 1em; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.download-button:hover {
+    background-color: #6A1C9A; /* Darker purple on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.download-button:active {
+    transform: translateY(0); /* Reset position when clicked */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow when clicked */
+}
